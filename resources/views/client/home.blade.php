@@ -3,7 +3,7 @@
 @section('content')
 <div class="p-4">
   <h1 class="text-2xl font-bold mb-6">Trang chủ</h1>
-
+<h1> Đây là git</h1>
   <!-- Thanh điều hướng + danh mục -->
   <div class="flex flex-col md:flex-row gap-6 mb-6">
     <aside class="w-full md:w-1/4 bg-white p-4 rounded shadow">
