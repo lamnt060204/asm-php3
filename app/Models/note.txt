@@ -1,0 +1,18 @@
+- Muốn sử dụng softDelete thì cần phải thêm deleted_at tại bảng muốn sử dụng bằng câu lênh
+    $tale->softDelete và trong model cần sử dụng use softDelete đó ra
+
+- Xóa mền 
+    $user = User::find(1)
+    $user->delete()
+- Khôi phục
+     $user = User::WithTrashed()->find(1)
+     $user->restore()
+- Xóa vĩnh viễn 
+     $user = User::WithTrashed()->find(1)
+     $user->forceDelete()
+- Lấy tất cả bảng ghi softDelete và bảng ghi thường
+    $user = User::WithTrashed()->get()
+- Chỉ lấy bản ghi softDelete 
+    $user = User::onlyTrashed()->get()
+
+
